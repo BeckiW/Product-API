@@ -1,8 +1,5 @@
 import React from "react"
-
-
-
-const productsJson = require("./../products.json")
+import "./style.css"
 
 
 class Product extends React.Component {
@@ -10,7 +7,7 @@ class Product extends React.Component {
     return (
       <div className="product-item">
         <div className="product-image">
-          <img src={this.props.image} alt = "image"></img>
+          <img src={this.props.image} alt = "productImage"></img>
         </div>
         <h2 className="product-title">{this.props.name} </h2>
         <ul className="product-description">

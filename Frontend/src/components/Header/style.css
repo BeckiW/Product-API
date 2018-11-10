@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+
+.Header {
+  font-size: 14px;
+  font-family: "ff-dagny-web-pro", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  padding: 24px 96px;
+  height: 85px;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0.5px 1px #D0D0D0;
+}
+
+.Header-link {
+  color: #000000;
+  font-family: "ff-dagny-web-pro", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.Header-link:hover {
+  color: #f04e29;
+}
+
+header{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  padding: 0 30px;
+}
+
+.Header-link a{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  justify-content: space-between;
+  }
+
+  .Header-link ul{
+    display: flex;
+    justify-content: space-between;
+    }
+
+.page-title{
+  font-size: 30px;
+  font-style: 'Shadows Into Light', cursive;
+  }
+
+.Header-link a:hover{
+  text-decoration: underline;
+  }

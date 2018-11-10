@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 80%;
+  font-family: sans-serif;
+  background-color: white;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 30px;
+  align-items: center;
+}
+
+h1 {
+  width:100%;
+  font-size: 25px;
+  height: 40px;
+  font-weight: lighter;
+  padding: 25px;
+}
+
+.inputboxes label {
+  display: block;
+  padding-bottom: 5px;
+  font-family: "ff-dagny-web-pro", sans-serif;
+
+}
+
+.labels {
+  text-align: left;
+  width: 40%;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  background: #000000;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 20px;
+}

@@ -23,25 +23,25 @@ mongoose.connection.once("open", () => console.log("Connected to mongodb"))
 
 // This is the beginning of a model for the Product object.
 const Product = mongoose.model("Product", {
-  id: Number,
-  name: String,
-  type: String,
-  size: String,
-  numberInPack: Number,
-  substance: String,
-  price: Number,
-  deliveryTime: String,
-  image: String,
-  description: String
-})
+        id: Number,
+        name: String,
+        type: String,
+        size: String,
+        numberInPack: Number,
+        substance: String,
+        price: Number,
+        deliveryTime: String,
+        image: String,
+        description: String
+      })
 
-app.get("/", (req, res) => {
-  res.send("Products API")
+    app.get("/", (req, res) => {
+      res.send("Products API")
 })
 
 // Endpoint to create a product. Send a POST to /products with a JSON body
 // with the keys and values you want to persist in the database.
-app.post("/products", (req, res) => {
+app.post("/product", (req, res) => {
   const product = new Product(req.body)
 
   product.save()
@@ -50,11 +50,13 @@ app.post("/products", (req, res) => {
 })
 
 
-app.get("/product", (req, res) => {
-  product.find(). then(product => {
-    console.log("product: ", product)
-    res.json(product)
+app.get("/products", (req, res) => {
+  Product.find()
+  .then((products) => {
+    console.log("products: ", products)
+    res.send(products)
   })
 })
+
 
 app.listen(8080, () => console.log("Products API listening on port 8080!"))
